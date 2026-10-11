@@ -1,0 +1,182 @@
+
+* { box-sizing: border-box;
+margin: 0; 
+padding: 0; 
+}
+
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    background: #fdfdfd; 
+    color: #2d5a27; 
+    line-height: 1.6; 
+}
+
+
+nav {
+     display: flex; 
+     justify-content: space-between; 
+     padding: 20px 10%; 
+     background: #fff; 
+     position: sticky; 
+     top: 0; 
+     z-index: 1000; 
+     box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+}
+
+nav ul {
+     display: flex; 
+     list-style: none;
+    gap: 25px; 
+}
+
+nav a { 
+    text-decoration: none;
+     color: #2d5a27; 
+     font-weight: bold; 
+     transition: 0.3s;
+}
+
+nav a:hover {
+     color: #3e7d36; 
+}
+
+
+
+section { 
+    padding: 80px 10%;
+     text-align: center; 
+}
+
+h1 { 
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px; 
+}
+
+p.intro { 
+    max-width: 600px; 
+    margin: 0 auto 30px; 
+    font-size: 1.1rem; 
+}
+
+
+.carousel1 { 
+    display: flex; 
+    overflow-x: auto; 
+    gap: 20px; 
+    padding: 20px 0; 
+    scroll-snap-type: x mandatory; 
+}
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(18, 94, 3, 0.7);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-btn:hover {
+    background-color: rgb(4, 94, 16);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.card { 
+    background: white; 
+    min-width: 280px; 
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); 
+    scroll-snap-align: start; 
+    border: 1px solid #eef2ee;
+}
+
+.card img { 
+    width: 100%; 
+    height: 220px;
+    object-fit: cover; 
+    border-radius: 15px; 
+    margin-bottom: 15px; 
+}
+
+.price { 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: #2d5a27; 
+    margin: 10px 0; 
+}
+
+
+
+.btn-order { 
+    background: #2d5a27; 
+    color: white; 
+    border: none; 
+    padding: 12px 30px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    transition: 0.3s; 
+    display: inline-block; 
+    text-decoration: none; 
+}
+
+.btn-order:hover { 
+    background: #3e7d36; 
+    transform: scale(1.05); 
+}
+
+
+
+.contact-info { 
+    margin-top: 30px; 
+    background: #e8f5e9; 
+    padding: 30px; 
+    border-radius: 20px; 
+    display: inline-block; 
+}
+
+.contact-info a { 
+    color: #2d5a27; 
+    font-weight: bold; 
+}
